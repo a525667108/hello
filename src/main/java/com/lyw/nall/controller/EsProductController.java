@@ -61,6 +61,9 @@ public class EsProductController{
         EsProduct esProduct = esProductService.create(id);
         if (esProduct != null) {
             return CommonResult.success(esProduct);
+
+
+            
         } else {
             return CommonResult.failed();
         }
