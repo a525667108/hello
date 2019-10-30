@@ -53,6 +53,8 @@ public class EsProductController{
     }
 
     @ApiOperation(value = "根据id创建商品")
+
+
     @RequestMapping(value = "/create/{id}", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult<EsProduct> create(@PathVariable Long id) {
